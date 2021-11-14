@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>BEM-template</title>
+    <style>
+        .container {
+            margin: 90px;
+        }
+         .header {
+            width: 100%;
+            display: inline;
+            margin-bottom: 190px;
+        }
+        .header__logo {
+            float:left;
+            display: flex;
+        }
+        .header__button {
+             float:right;
+        }
+        .button__image {
+             padding-left: 5px;
+        }
+        .button {
+            display: flex;
+            background-color: #5222D0;
+            color: white;
+            border-radius: 100px;
+            border-color: #5222D0;
+            padding: 14px 16px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 13px;
+        }
+        .main {
+            clear: both;
+            padding-top: 100px;
+            
+        }
+        .main__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+        }
+        .content__block {
+            width: 80%;
+            padding: 25px 35px;
+        }
+        .content__block_subscribe {
+            background-color: #ec615b;
+            margin: 0px 65px 0px 35px;
+        }
+
+        .main__title {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+            padding-left: 30px;
+        }
+        .block__title {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .block__title_white {
+            color: white;
+        }
+        .block__text, .nav__item {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        .block__input {
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .nav__item {
+            text-decoration: none;
+            color: #000;
+            padding-left: 34px;
+        }
+        .footer {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">   
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/images/full-logo.png" alt="logo">
+        </div>
+        <div class="header__button">
+            <button class="button " >
+                <div class="button__title">КОРЗИНА
+                </div>
+                <div class="button__image">
+                    <img src="assets/images/basket.png" class="" alt="basket">
+                </div>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__title ">ВОЗМОЖНОСТИ</h1>
+        <div class="main__content">
+            <div class="content__block">
+                <div class="block__img">
+                    <img src="assets/images/Wireless.png" alt="Wireless">
+                </div>
+                <h2 class="block__title ">БЕЗ ПРОВОДОВ</h2>
+                <div class="block__text">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание, ни большое помещение, чтобы расставить трекеры.</div>
+            </div>
+            <div class="content__block">
+                <div class="block__img">
+                <img src="assets/images/No-computer.png" alt="No computer">
+                </div>
+                <h2 class="block__title ">БЕЗ КОМПЬЮТЕРА</h2>
+                <div class="block__text">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш шлем запускает игры из облака, поэтому просто наслаждайтесь.</div>
+            </div>
+            <div class="content__block">
+                <div class="block__img">
+                    <img src="assets/images/long-work.png" alt="Long work">
+                </div>
+                <h2 class="block__title ">ДО 10 ЧАСОВ РАБОТЫ</h2>
+                <div class="block__text">Несмотря на компактность и производительность, шлем может работать до 10 часов — даже, если вы играете в самые ресурсоемкие игры.</div>
+            </div>
+            <div class="content__block">
+                <h2 class="block__title ">СОТНИ ИГР</h2>
+                <div class="block__text">Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</div>
+            </div>
+            <div class="content__block">
+                <h2 class="block__title ">ПОЧТИ ДАРОМ</h2>
+                <div class="block__text">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы существенно экономите на мощном компьютере.</div>
+            </div>
+            <div class="content__block content__block_subscribe">
+                <h2 class="block__title block__title_white ">НОВОСТИ</h2>
+                <input type="text" class="block__input" placeholder="Эл. почта"/>
+                <div class="block__button">
+                    <button class="button">ПОДПИСАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__nav">
+            <a href="#" class="nav__item">Возможности</a>
+            <a href="#" class="nav__item">Где купить</a>
+            <a href="#" class="nav__item">Доставка</a>
+            <a href="#" class="nav__item">Помощь</a>
+        </div>
+    </footer> 
+</div>  
+</body>
+</html>
